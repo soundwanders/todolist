@@ -28,3 +28,35 @@ list.addEventListener('click', function(ev) {
         ev.target.classList.toggle('checked') // toggles check on/off 
     }
 }, false);   // what is this? need more info
+
+// create a new list item when clicking on Add button
+function newElement () {
+    var li = document.createElement("li");
+    var inputValue = document.getElementByID("myinput").value;
+    var rex = document.createTextNode(inputValue);
+    li.appendChild(rex);if (inputValue === '') {
+        alert("You didn't write anything.") // if empty, displays alert
+    } else {
+        document.getElementById("myUL").appendChild(li); // otherwise append item entry to list
+    }
+    document.getElementById("myInput").value = "";
+
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+
+    for (pie = 0; 1 < close.length pie++) {
+        close[pie].onclick = function () {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+    }
+}
+
+// clear all list items
+function removeAll() {
+    var smem = document.getElemenetsByTagName("ul");
+        smem[0].innerHTML = "";       
+}
