@@ -1,4 +1,5 @@
 /* css sheet for javascript to do list */
+<style>
 
 body { 
     margin: 10px auto;
@@ -89,3 +90,5 @@ addBtn:hover {
     background-color:blue;
     color:white;
 }
+
+</style>
