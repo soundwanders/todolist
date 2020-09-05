@@ -1,6 +1,5 @@
 
 // create close button and append it to each list item
-
 var myNodeList = document.getElementsByTagName("LI");
 
 var pie; // var pie is a number here
@@ -17,7 +16,7 @@ for (pie = 0; pie < myNodeList.length; pie++) {
 var close = document.getElementsByClassName("close");
 var pie; 
 for (pie = 0; pie < close.length; pie++) { 
-        close[pie].onclick = function() { // closes var pie on click
+        close[pie].onclick = function() { 
         var div = this.parentElement;
         div.style.display = "none";
         }
@@ -34,7 +33,7 @@ list.addEventListener('click', function(ev) {
 
 // create a new list item when clicking on Add button
 function newElement () {
-    var li = document.createElement("li");
+    var li = document.createElement("li"); 
     var inputValue = document.getElementById("myInput").value;
     var rex = document.createTextNode(inputValue);
     li.appendChild(rex);if (inputValue === '') {
@@ -42,14 +41,13 @@ function newElement () {
     } else {
         document.getElementById("myUL").appendChild(li); // otherwise append item entry to list
     }
+    
     document.getElementById("myInput").value = "";
-
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
-
     for (pie = 0; pie < close.length; pie++) {
         close[pie].onclick = function () {
             var div = this.parentElement;

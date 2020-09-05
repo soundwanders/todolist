@@ -25,6 +25,7 @@ ul li {
     border: solid .5px;
     border-color:lightgrey;
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     transition: 0.2s; /* what is transition? */   
 
     /* allow list items to be deselected */
@@ -66,7 +67,7 @@ input {
     border-radius: 0px;
     border-style: solid;
     border-width:2px;
-    border-color:maroon;
+    border-color:navy;
     width: 75%;
     padding: 15px;
     margin-bottom:20px;
@@ -79,12 +80,13 @@ input:hover {
 }
 
 .addBtn {
-    padding: 18px;
+    padding: 16.5px;
     width: 25%;
-    background:maroon;
+    background:navy;
     color:white;
     float: left;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;;
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
@@ -93,7 +95,7 @@ input:hover {
 }
 
 .addBtn:hover {
-    background:navy;
+    background:blue;
     color:white;
 }
 
@@ -101,14 +103,14 @@ input:hover {
     width: 30%;
     font-weight: bold;
     font-style: normal;
-    font-size: xx-large;
-    font-family: "Arial";
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 20px 35%;
-    background:maroon;
+    background:navy;
     color:white;
     cursor: pointer;
 }
 #clear-list:hover {
-    background-color:navy;
+    background-color:blue;
     color:white;
 }
