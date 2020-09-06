@@ -33,25 +33,25 @@ list.addEventListener('click', function(ev) {
 
 // create a new list item when clicking on Add button
 function newElement () {
-    var li = document.createElement("li"); 
-    var inputValue = document.getElementById("myInput").value;
-    var rex = document.createTextNode(inputValue);
-    li.appendChild(rex);if (inputValue === '') {
+    var li = document.createElement("li");  // creates list item element
+    var inputValue = document.getElementById("myInput").value; //gets myInput for new list item
+    var rex = document.createTextNode(inputValue);  // create new text node with data of whatever is typed in input bar
+    li.appendChild(rex);if (inputValue === '') {    // checks to see if user attempted to add empty list item
         alert("You didn't type anything.") // if empty, displays alert
     } else {
-        document.getElementById("myUL").appendChild(li); // otherwise append item entry to list
+        document.getElementById("myUL").appendChild(li); // otherwise append list item to the to do list"
     }
     
-    document.getElementById("myInput").value = "";
-    var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
+    document.getElementById("myInput").value = "";  // gets user input
+    var span = document.createElement("SPAN");      // create span element
+    var txt = document.createTextNode("\u00D7");    // ???
+    span.className = "close";   //establish span class 'close'
+    span.appendChild(txt);  //
     li.appendChild(span);
     for (pie = 0; pie < close.length; pie++) {
         close[pie].onclick = function () {
             var div = this.parentElement;
-            div.style.display = "none";
+            div.style.display = "none"; 
         }
     }
 }
