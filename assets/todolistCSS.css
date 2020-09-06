@@ -1,10 +1,11 @@
-/* css sheet for javascript to do list */
+/* style sheet for JS-based to do list */
 
 body { 
     margin: 10px auto;
     min-width: 250px;
     max-width: 50%;
     background-color:lightgray;
+    
 }
 
 * {
@@ -15,18 +16,18 @@ ul {
     margin: 0;
     padding: 0;
 }
-
 ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
+    overflow: hidden;
     list-style-type: none;
     background:white;
     border: solid .5px;
     border-color:lightgrey;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    transition: 0.2s; /* what is transition? */   
+    transition: 0.2s;
 
     /* allow list items to be deselected */
     -webkit-user-select: none;
@@ -49,6 +50,7 @@ ul li {
     color:black;
     text-align: center;
 }
+
 .header:after {
     content: "";
     display: table;
@@ -80,7 +82,7 @@ input:hover {
 }
 
 .addBtn {
-    padding: 16.5px;
+    padding: 18px;
     width: 25%;
     background:navy;
     color:white;
@@ -101,6 +103,7 @@ input:hover {
 
 #clear-list {
     width: 30%;
+    padding: 15px;
     font-weight: bold;
     font-style: normal;
     font-size: x-large;

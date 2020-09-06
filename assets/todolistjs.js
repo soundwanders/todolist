@@ -25,7 +25,7 @@ for (pie = 0; pie < close.length; pie++) {
 // adding check when mouseclick on completed list items
 var list = document.querySelector('ul'); //returns first element 'ul' that is descendant of node?
 list.addEventListener('click', function(ev) {
-    if (ev.target.tagName === 'LI') {     // === is used to check datatype and compare variables / values
+    if (ev.target.tagName === 'li') {     // === is used to check datatype and compare variables / values
     ev.target.classList.toggle('checked'); // toggles check on/off after if statement check
     }
 }, false); 
