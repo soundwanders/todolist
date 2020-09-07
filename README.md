@@ -1,8 +1,9 @@
 ##
 creating a to-do list to learn how javascript, html, css interact with each other
 
-this to-do list is not my original code. project created by Dataflair.
+a couple projects referenced to help build this can be found below...
+https://data-flair.training/blogs/javascript-project-to-do-list/
+https://www.w3schools.com/howto/howto_js_todolist.asp
 
-to see the original project, visit https://data-flair.training/blogs/javascript-project-to-do-list/
 ##
 broop
