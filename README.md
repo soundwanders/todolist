@@ -1,9 +1,4 @@
 ##
-creating a to-do list to learn how javascript, html, css interact with each other
-
-a couple projects referenced to help build this can be found below...
-// https://data-flair . training/blogs/javascript-project-to-do-list
-// w3schools . com/howto/howto_js_todolist.asp 
-remove spaces from links
+created a to do list using javascript to append list items on submit.
 ##
 broop
