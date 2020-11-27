@@ -1,13 +1,13 @@
 // create close button and append it to each list item
-const myNodeList = document.getElementsByTagName('LI'); // get list items
+const getListItem = document.getElementsByTagName('LI'); // get list items
 var pie; // var name 'pie' is arbitrary, it acts as a number here
 
-for (pie = 0; pie < myNodeList.length; pie++) {
+for (pie = 0; pie < getListItem.length; pie++) {
   const span = document.createElement('SPAN');
   const txt = document.createTextNode('\u00D7');
   span.className = 'close'; // close button
   span.appendChild(txt); // add span to txt node \u00D7
-  myNodeList[pie].appendChild(span); // add span to myNodeList
+  getListItem[pie].appendChild(span); // add span to getListItem
 }
 
 // click on close button to hide current list item
