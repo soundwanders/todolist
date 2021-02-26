@@ -1,20 +1,20 @@
 // create close button and append it to each list item
 const getListItem = document.getElementsByTagName('LI'); // get list items
-var pie; // var name 'pie' is arbitrary, it acts as a number here
+var n; // var name 'n' is arbitrary, it acts as a number here
 
-for (pie = 0; pie < getListItem.length; pie++) {
+for (n = 0; n < getListItem.length; n++) {
   const span = document.createElement('SPAN');
   const txt = document.createTextNode('\u00D7');
   span.className = 'close'; // close button
   span.appendChild(txt); // add span to txt node \u00D7
-  getListItem[pie].appendChild(span); // add span to getListItem
+  getListItem[n].appendChild(span); // add span to getListItem
 }
 
 // click on close button to hide current list item
 const close = document.getElementsByClassName('close');
-var pie;
-for (pie = 0; pie < close.length; pie++) {
-  close[pie].onclick = function () {
+var n;
+for (n = 0; n < close.length; n++) {
+  close[n].onclick = function () {
     const div = this.parentElement;
     div.style.display = 'none';
   };
@@ -41,7 +41,7 @@ if (item) {
 }
 
 // create a new list item when clicking on Add button
-function newElement () {
+function newListElement () {
   const li = document.createElement('li'); // creates list item element
   const inputValue = document.getElementById('myInput').value; // gets myInput for new list item
   const rex = document.createTextNode(inputValue); // create new text node with data of whatever is typed in input bar
@@ -59,8 +59,8 @@ function newElement () {
   span.appendChild(txt); // add txt as Child of span
   li.appendChild(span); // add span as Child to list
 
-  for (pie = 0; pie < close.length; pie++) { // when adding list item, clears input bar when pie = 0
-    close[pie].onclick = function () { // on click empty input bar
+  for (n = 0; n < close.length; n++) { // when adding list item, clears input bar when n = 0
+    close[n].onclick = function () { // on click empty input bar
       const div = this.parentElement;
       div.style.display = 'none'; // display empty input bar
     };
