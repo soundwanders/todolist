@@ -1,0 +1,25 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "JavaScript To-Do List",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"scripts\" : {"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soundwanders/todolist.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "list"
+  ],
+  "author": "soundwanders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soundwanders/todolist/issues"
+  },
+  "homepage": "https://github.com/soundwanders/todolist#readme"
+}
